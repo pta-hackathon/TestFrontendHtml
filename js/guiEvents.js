@@ -9,8 +9,6 @@ function initializePage() {
 	fuelleSelectMitUsernamen('cboNamenswahl');
 }
 
-
-
 function zeigeDivZuStage(stage) {
 	var div2Show="divNameWaehlen";
 
@@ -18,12 +16,13 @@ function zeigeDivZuStage(stage) {
 		div2Show="divNameWaehlen";
 	} else if (stage=="warte_skill") {
 		div2Show="divSkillWaehlen";
-	} else if (stage=="schaetzrunden") {
+	} else if (stage=="brainstorming") {
+			div2Show="divBrainstorming";
+	} else if (stage=="schaetzungen") {
 		div2Show="divSchaetzungen";
 	} else if (stage=="tabellenstand") {
 		div2Show="divTabellenstand";
 	}
-	
 	zeigeDivArea(div2Show);
 }
 
@@ -47,11 +46,8 @@ function zeigeMessage(msg) {
 	pm.innerHTML=msg;
 }
 
-
-
 function abfrageStage() {
 }
-
 
 // füllt eine <select> mit der Liste der Usernamen
 function fuelleSelectMitUsernamen(idSelect) {
@@ -66,7 +62,6 @@ function fuelleSelectMitUsernamen(idSelect) {
 	}
 }
 
-
 function getSelectListUsernamen() {
 	var html="<select>";
 	for (elem of usernamenliste) {
@@ -75,9 +70,6 @@ function getSelectListUsernamen() {
 	html=html+"</select>";
 	return html;
 }
-
-
-
 
 /* Ändert das className - Attribut am übergebenen DOM-Element:
 
@@ -93,5 +85,3 @@ function modifyClass(domElement, toAdd, toRemove) {
 		domElement.className = domElement.className+" "+toAdd;
 	}		
 }
-
-

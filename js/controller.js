@@ -2,7 +2,10 @@
 
 var stage="";
 var username="";
+var kompetenz="";
+var ticketname="";
 var userid=-1;
+var ticketid=-1;
 
 var usernamenliste="";
 
@@ -20,9 +23,5 @@ function execLogout() {
 	showTabHome();
 	zeigeMessage("Abmeldung...");
 	restCallLogout();
-	sessionTournamentName="";
-	sessionTournamentId=-1;
-	sessionTokenReceived="";
-	sessionErgebnisseRunde=0;	
 }
 

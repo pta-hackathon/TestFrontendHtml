@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Multistage-PlanningPoker</title>
+	<link rel="stylesheet" href="./css/PlanningPoker.css">
+  
+	<script src="./js/restFunctions.js" ></script>
+	<script src="./js/guiEvents.js" ></script>
+	<script src="./js/controller.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body onload="initializePage()">
+
+
+ <header>
+ <h1 style="text-align:center">Multistage-PlanningPoker</h1>
+
+   <button id="btnMenuTabelle" class="btnMenue" onclick="restCall_abfragestage()">Stand Stage?</button>
+   <button id="btnMenuTabelle" class="btnMenue" onclick="zeigeDivZuStage('warte_login')">Test stage anmelden</button>
+   <button id="btnMenuTabelle" class="btnMenue" onclick="zeigeDivZuStage('warte_skill')">Test skill waehlen</button>
+   <button id="btnMenuTabelle" class="btnMenue" onclick="zeigeDivZuStage('schaetzungen')">Test schaetzungen</button>
+   <button id="btnMenuTabelle" class="btnMenue" onclick="zeigeDivZuStage('tabellenstand')">Test tabellenstand</button>
+
+
+	<p id="pMessageAnzeige" name="MessageAnzeige">Willkommen!</p>
+
+ </header> 
+<hr />
+
+
+
+<div id="divNameWaehlen" class="divTabulatorArea">
+	<h1>Anmelden</h1>
+	<p>W&aumlhle aus der Liste deinen Namen!</p>
+	
+	<select id="cboNamenswahl" size="6" width="25">
+	</select>
+	
+	<br>	
+   <button id="btnMenuErgebnisse" class="btnMenue" onclick="restCall_anmeldung()">Anmelden</button>
+	
+	<hr />
+</div>
+
+
+
+<div id="divSkillWaehlen" class="divTabulatorArea">
+
+	<h1>Wie gut kennst Du das Thema vom Ticket?</h1>
+
+	<p id="txtTicket">Tickettext...</p>
+
+	<select id="cboSkilllevel" size="6" width="25">
+		<option value="1" label="Bahnhof?" selected>Bahnhof?</option>
+		<option value="2" label="...schon mal geh&ouml;rt">...schon mal geh&ouml;ort</option>
+		<option value="3" label="Ein bisschen was weiss ich">Ein bisschen was weiss ich</option>
+		<option value="4" label="Kenne mich gut aus">Kenne mich gut aus</option>
+		<option value="5" label="Ich weiss alles">Ich weiss alles</option>
+	</select>	
+
+	<br>	
+   <button id="btnMenuErgebnisse" class="btnMenue" onclick="restCall_skillwaehlen()">festlegen</button>
+
+   <hr/>
+</div>
+
+
+
+<div id="divSchaetzungen" class="divTabulatorArea">
+	<h1>Sch&auml;tzungen</h1>
+   
+	<div id="divMeineSchaetzung" >
+
+	
+	</div>	
+   
+	<div id="divAndereSchaetzungen" >
+	<table id="tabSchaetzungen" border="1px">
+	<tr>
+	<td></td>
+	<td></td>
+	</tr>
+	</table>
+	
+	</div>	
+   
+   <hr/>
+</div>
+
+
+
+<div id="divTabellenstand" class="divTabulatorArea">
+	<h1>Tabellenstand</h1>
+   <hr/>
+</div>
+
+
+
+</body>
+</html>

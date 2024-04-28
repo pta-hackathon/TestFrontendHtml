@@ -1,0 +1,134 @@
+
+xbody {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 1fr 40px; 
+	max-width: 90em;
+}
+
+header {
+	/*grid-column: 1 / span 1;*/
+	/*grid-row:    1;*/					
+	border: 2px solid #3481cd
+	margin: 3px;
+	background: skyblue;
+}	
+
+
+.btnMenue {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.btnMenue:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.btnMenue:active {
+	position:relative;
+	top:1px;
+}
+
+.btnMenueAuswahl {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#bbbbbb;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.btnMenueAuswahl:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.btnMenueAuswahl:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.btnFunctions {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.btnFunctions:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+.btnFunctions:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+.divHidden {
+	display: none;
+}	
+
+.divVisibleBlock {
+	display: block;
+	display: table-row;
+}	
+
+.divVisibleTableRow {
+	display: table-row;
+}	
+
+
+.textExplanation {
+	font-size: small;
+	font-style: italic;
+}
+
+.textStyleLink {
+	font-style: bold;
+	text-decoration: underline;
+}
+
+
+
+.tableLogon {
+  width:100%; table-layout: fixed;
+}
+
+#tabDreiSpaltig { width: 33%; }
+
+#tabSpalteMittel { width: 15%; }
+
+
